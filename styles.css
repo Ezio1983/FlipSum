@@ -350,3 +350,17 @@ body {
     order: 0;
   }
 }
+
+/* Video Section */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 720px;      /* 控制最大寬度，不會爆掉 */
+}
+
+.promo-video {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
