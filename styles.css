@@ -249,6 +249,30 @@ body {
   gap: 16px;
 }
 
+/* 新截圖版型：每張圖都有自己的容器與手機框 */
+.screenshot-item {
+  display: flex;
+  justify-content: center;
+}
+
+.screenshot-frame {
+  background: #111;
+  border-radius: 24px;
+  padding: 8px;
+  max-width: 230px;     /* 控制最大寬度，避免跑版 */
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+.screenshot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* 保留占位樣式（若之後還想用文字框就用這個） */
 .screenshot-placeholder {
   border-radius: 20px;
   padding: 40px 16px;
@@ -301,12 +325,6 @@ body {
 
 .footer-links a:hover {
   opacity: 1;
-}
-
-.screenshot-img {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* RWD */
